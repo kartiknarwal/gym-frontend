@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-export const server ='http://localhost:4000';
+export const server ='https://gym-backend-7dhs.onrender.com/';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
