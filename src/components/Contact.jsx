@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { ClipLoader } from "react-spinners";
 import { toast } from "react-toastify";
+import { server } from '../main';
+
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,7 +16,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/send/mail",
+                `${server}/send/mail`,
         {
           name,
           email,
